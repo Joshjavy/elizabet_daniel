@@ -58,7 +58,7 @@ class ModelDeseos extends Model
     }
     public function getAsistencia()
     {
-        $sql = "SELECT id, uid,Nombre,pases,paseschildren FROM asistencia";
+        $sql = "SELECT id, uid,Nombre,pases,paseschildren,alergia FROM asistencia";
         $query = $this->db->prepare($sql);
         $query->execute();
         return $query->fetchAll();
@@ -68,13 +68,14 @@ class ModelDeseos extends Model
     {   
         try{
             
-            $statement = $this->db->prepare('INSERT INTO asistencia (uid, Nombre,pases,paseschildren) VALUES (:uid,:Nombre,:pases,:paseschildren)');
+            $statement = $this->db->prepare('INSERT INTO asistencia (uid, Nombre,pases,paseschildren,alergia) VALUES (:uid,:Nombre,:pases,:paseschildren,:alergia)');
 
                 $status = $statement->execute([
                     'uid' => $uid,
                     'Nombre' => $datos['nombre'],
                     'pases'=>$datos['pases'],
                     'paseschildren'=>isset($datos['paseschildren'])? $datos['paseschildren']:'',
+                    'alergia'=>isset($datos['vegaveg'])? $datos['vegaveg']:'',//Vegano
                     ]);
             return ['status'=>$status,'error'=>false,'id'=>$this->db->lastInsertId()];
         }catch(\PDOException $e){

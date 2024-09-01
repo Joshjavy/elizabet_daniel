@@ -310,7 +310,7 @@
       {
         .sidenav li>a
         {
-          font-size:.8rem !important;
+          font-size:.6rem !important;
         }
       }
 
@@ -379,6 +379,7 @@
     z-index: 9;
     left: 20px;
     font-size: var(--textos1);
+    top: 0;
   }
   .spacio3{
     padding-top: var(--espacio3);

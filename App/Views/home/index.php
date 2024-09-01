@@ -1,3 +1,33 @@
+<?php
+// if (!isset($_GET['invitado'])) {
+// 	echo '<meta http-equiv="refresh" content="0; url=' . $baseUrl . 'Home/login">';
+// 	return false;
+// }
+
+?>
+<!--CSS: Importar Fuente de iconos google-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--CSS: Importar materialize.css-->
+<link type="text/css" rel="stylesheet" href="<?= $baseUrl ?>src/css/materialize.min.css" media="screen,projection">
+<!--  CSS: AOS Animated -->
+<link type="text/css" rel="stylesheet" href="<?= $baseUrl ?>src/css/aos.css">
+<!-- CSS: Importar css personalizado -->
+<link rel="stylesheet" type="text/css" href="<?= $baseUrl ?>src/css/styles.css?v=1.0.1">
+<!-- CSS: Importar css personalizado -->
+<link rel="stylesheet" href="<?= $baseUrl ?>src/css/jquery.bxslider.css">
+
+
+<!-- CSS: Iconos font awesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+<!--Shortcut icon: Favicon -->
+<link rel="icon" href="<?= $baseUrl ?>src/images/emblemas/emblema.png" sizes="32x32">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css">
+</head>
+
+<body class="">
+    
+    <main role="main" class="">
 <!--PRECARGA LOADING -->
 <div class="preloader-background">
 	<div class="lds-heart">
@@ -31,10 +61,10 @@
 	</ul>
 </div>
 <!-- Begin page content -->
-<div class="" style="position: fixed;z-index:998;">
+<div class="" style="width: 1px; position: fixed;z-index:998;">
         
 		<!-- SIDEBAR -->
-	   <ul class="sidenav sidenav-close text-base" style="position: relative; z-index:11;"  id="mobile-demo">
+	   <ul class="sidenav sidenav-close text-xs		 sm:text-xl		  md:text-xl		lg:text-xl		 xl:text-3xl	 2xl:text-3xl" style="position: relative; z-index:11;"  id="mobile-demo">
 		 <li class="li_inicio"><a href="#">INICIO</a></li>
 		 <li class="li_cont">
 		   <a href="#" class="linkdata" data-enlace="DE_LAS_MANOS_DE_NUESTROS_PADRES" 
@@ -65,7 +95,7 @@
 		   >
 		 </li>
 		 <li class="li_cont">
-		   <a href="#" class="linkdata" data-enlace="asistencia">Asistencia</a>
+		   <a href="#" class="linkdata" data-enlace="asistencia">ASISTENCIA</a>
 		 </li>
 	   </ul>
    
@@ -141,7 +171,7 @@
 
 
 <div id="DE_LAS_MANOS_DE_NUESTROS_PADRES" class="flex justify-center pt-0.5	 md:pt-20 md:pt-20	 lg:pt-24 xl:pt-24	 2xl:pt-28	 lg:justify-center xl:justify-center 2xl:justify-center	col s12 m12 l12" data-aos="fade-up" data-aos-duration="1500">
-	<h1 class="title_cards text-3xl		 md:text-4xl md:text-4xl lg:text-5xl	xl:text-5xl	 2xl:text-5xl		 azul text-center	">
+	<h1 class="title_cards text-3xl	 sm:text-3xl md:text-3xl	 lg:text-3xl 2xl:text-6xl 2xl:text-6xl		 azul text-center	">
 		DE LAS MANOS DE <br />NUESTROS PADRES
 	</h1>
 </div>
@@ -156,7 +186,7 @@
 		Omar Escolá</p>
 </div>
 <div id="CELEBRAMOS_NUESTRO_AMOR" class="col s12 m12 l12 spacio3" data-aos="fade-up" data-aos-duration="1500">
-	<h1 class="title_cards text-3xl		 md:text-4xl md:text-4xl lg:text-5xl	xl:text-5xl	 2xl:text-5xl		 azul text-center	">
+	<h1 class="title_cards text-3xl	 sm:text-3xl md:text-3xl	 lg:text-3xl 2xl:text-6xl 2xl:text-6xl		 azul text-center	">
 		CELEBRAMOS NUESTRO AMOR<br />EN:
 	</h1>
 </div>
@@ -184,7 +214,7 @@
 
 
 <div class="col s12 m12 l12 spacio3" id="AGRADECIMIENTO" data-aos="fade-up" data-aos-duration="1500">
-	<h1 class="title_cards text-3xl		 md:text-4xl md:text-4xl lg:text-5xl	xl:text-5xl	 2xl:text-5xl		 azul text-center	">
+	<h1 class="title_cards text-3xl	 sm:text-3xl md:text-3xl	 lg:text-3xl xl:text-6xl 2xl:text-6xl		 azul text-center	">
 		AGRADECIMIENTO
 	</h1>
 </div>
@@ -197,7 +227,7 @@
 			<img src="<?= $baseUrl ?>src/images/elementos/Polaroid_02_E_D.png" class="m-auto" />
 		</div>
 
-		<div class="w-1/2 m-auto">
+		<div class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 px-3 sm:px-3 md:px-3 lg:px-0 xl:px-0 2xl:px-0  m-auto">
 			<div>
 				<p class="text-center	 text-sm md:text-base	md:text-base lg:text-base	 xl:text-base	 2xl:text-base text-justify	">
 					A nuestros padres Alejandra, Ricardo, Graciela y Omar
@@ -215,7 +245,7 @@
 			</div>
 		</div>
 
-		<div class="w-1/2 flex justify-center imgagradecerbott m-auto">
+		<div class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 px-3 sm:px-3 md:px-3 lg:px-0 xl:px-0 2xl:px-0 flex justify-center imgagradecerbott m-auto">
 			<img src="<?= $baseUrl ?>src/images/elementos/Polaroid_02_E_D.png" class="m-auto" />
 		</div>
 
@@ -224,7 +254,7 @@
 
 
 <div id="CRONOGRAMA" class="spacio3 flex justify-center md:pt-20 md:pt-20	 lg:pt-24 xl:pt-24	 2xl:pt-28	 lg:justify-center xl:justify-center 2xl:justify-center	col s12 m12 l12" data-aos="fade-up" data-aos-duration="1500">
-	<h1 class="title_cards text-3xl		 md:text-4xl md:text-4xl lg:text-5xl	xl:text-5xl	 2xl:text-5xl		 azul text-center	">
+	<h1 class="title_cards text-3xl	 sm:text-3xl md:text-3xl	 lg:text-3xl 2xl:text-6xl 2xl:text-6xl		 azul text-center	">
 		CRONOGRAMA
 	</h1>
 </div>
@@ -235,7 +265,7 @@
 
 <div id="CÓDIGO_DE_VESTIMENTA" class="bgazul" data-aos="fade-up" data-aos-duration="1500">
 	<div class="flex justify-center md:pt-20 md:pt-20	 lg:pt-24 xl:pt-24	 2xl:pt-28	 lg:justify-center xl:justify-center 2xl:justify-center	col s12 m12 l12">
-		<h1 class="title_cards text-3xl		 md:text-4xl md:text-4xl lg:text-5xl	xl:text-5xl	 2xl:text-5xl text-white text-center	">
+		<h1 class="title_cards text-3xl	 sm:text-3xl md:text-3xl	 lg:text-3xl 2xl:text-6xl 2xl:text-6xl text-white text-center	">
 			CÓDIGO DE VESTIMENTA
 		</h1>
 	</div>
@@ -247,7 +277,7 @@
 </div>
 
 <div id="LIBRO_DE_FIRMAS" class="spacio3 flex justify-center md:pt-20 md:pt-20	 lg:pt-24 xl:pt-24	 2xl:pt-28	 lg:justify-center xl:justify-center 2xl:justify-center	col s12 m12 l12" data-aos="fade-up" data-aos-duration="1500">
-	<h1 class="title_cards text-3xl		 md:text-4xl md:text-4xl lg:text-5xl	xl:text-5xl	 2xl:text-5xl		 azul text-center	">
+	<h1 class="title_cards text-3xl	 sm:text-3xl md:text-3xl	 lg:text-3xl 2xl:text-6xl 2xl:text-6xl		 azul text-center	">
 		LIBRO DE FIRMAS
 	</h1>
 </div>
@@ -265,7 +295,7 @@
 					</p>
 					<div class="flex justify-center">
 						<p><?php echo $deseo->deseo; ?></p>
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF3D34" class="size-6">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF3D34" class="w-5">
 							<path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
 						</svg>
 
@@ -299,7 +329,7 @@
 			<textarea name="deseos" id="" rows="4" required class="pl-1 block py-2.5 px-0 w-full text-xs text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"></textarea>
 
 		</div>
-		<button type="submit" style="background-color: #FFE983;" class="azul  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Firmar</button>
+		<button type="submit" style="background-color: #FFE983; height: 45px;" class="azul  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Firmar</button>
 	</form>
 </div>
 
@@ -307,7 +337,7 @@
 
 <div data-aos="fade-up" data-aos-duration="1500">
 	<div class="spacio3 flex justify-center md:pt-20 md:pt-20	 lg:pt-24 xl:pt-24	 2xl:pt-28	 lg:justify-center xl:justify-center 2xl:justify-center	col s12 m12 l12">
-		<h1 class="title_cards text-3xl		 md:text-4xl md:text-4xl lg:text-5xl	xl:text-5xl	 2xl:text-5xl		 azul text-center	">
+		<h1 class="title_cards text-3xl	 sm:text-3xl md:text-3xl	 lg:text-3xl 2xl:text-6xl 2xl:text-6xl		 azul text-center	">
 			SUGERENCIA DE HOSPEDAJE
 		</h1>
 	</div>
@@ -346,7 +376,7 @@
 
 <!--Asistencia !-->
 <div class="col s12 m12 l12 spacio3" id="asistencia" data-aos="fade-up" data-aos-duration="1500">
-	<h1 class="title_cards text-3xl		 md:text-4xl md:text-4xl lg:text-5xl	xl:text-5xl	 2xl:text-5xl		 azul text-center	">
+	<h1 class="title_cards text-3xl	 sm:text-3xl md:text-3xl	 lg:text-3xl 2xl:text-6xl 2xl:text-6xl		 azul text-center	">
 		CONFIRMACIÓN DE ASISTENCIA
 	</h1>
 </div>
@@ -354,79 +384,82 @@
 <div class=" spacio3" data-aos="fade-up" data-aos-duration="1500">
 
 	<div class=" md:font5 md:font5 lg:font8 xl:w-1/2 2xl:w-1/2 m-auto ">
-		<p class="text-center">ELIZABETH Y DANIEL</p>
+		<p class="text-center"><?php echo isset($_GET['invitado']) ? ($invitado ? $invitado->Nombre : '') : '' ?></p>
 	</div>
 
 	<div class=" flex justify-content-center text-xs sm:text-xs  md:text-sm lg:text-lg xl:text-xl	 2xl:text-2xl  xl:w-1/2 2xl:w-1/2 m-auto ">
-		<form class="w-full" action="<?= $baseUrl ?>asistencia/store" method="POST" autocomplete="off" name="formAsistencia" id="formAsistencia">
+		<form class="w-full" action="<?= $baseUrl ?>ControllerXv/store" method="POST" autocomplete="off" name="formAsistencia" id="formAsistencia">
 			<!--Fin checkbox!-->
 			<div class=" w-full flex justify-center gap-1 sm:gap-3  md:gap-4 lg:gap-8 xl:gap-8	 2xl:gap-8  pt-10">
 				<div>
-					<input class="hidden" id="radio_1" type="radio" name="radio" value="1">
+					<input class="hidden" id="radio_1" type="radio" name="pases" value="1">
 					<label
-						class="azul  flex justify-center   w-8 h-8 pt-1 sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10  border-2 border-gray-400 cursor-pointer rounded-full "
+						class="azul  flex justify-center   w-8 h-8  sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10  border-2 border-gray-400 cursor-pointer rounded-full "
 						style="background-color: #FFE983;"
 						for="radio_1">
-						<span class=" font-semibold textcheckbox sm:pt-2  md:pt-1 lg:pt-1 xl:pt-1	 2xl:pt-1 ">1</span>
+						<span class=" font-semibold textcheckbox sm:pt-2  md:pt-1 lg:pt-1 xl:pt-0	 2xl:pt-0 text-xl	 sm:text-xl		  md:text-xl		lg:text-xl		 xl:text-3xl	 2xl:text-3xl">1</span>
 					</label>
 				</div>
 
 				<div>
-					<input class="hidden" id="radio_2" type="radio" name="radio" value="2">
+					<input class="hidden" id="radio_2" type="radio" name="pases" value="2">
 					<label
-						class="azul flex justify-center   w-8 h-8 pt-1 sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10   border-2 border-gray-400 cursor-pointer rounded-full "
+						class="azul flex justify-center   w-8 h-8  sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10    border-2 border-gray-400 cursor-pointer rounded-full "
 						style="background-color: #FFE983;"
 						for="radio_2">
-						<span class=" font-semibold textcheckbox  sm:pt-2  md:pt-1 lg:pt-1 xl:pt-1	 2xl:pt-1">2</span>
+						<span class=" font-semibold textcheckbox  sm:pt-2  md:pt-1 lg:pt-1 xl:pt-0	 2xl:pt-0 text-xl	 sm:text-xl		  md:text-xl		lg:text-xl		 xl:text-3xl	 2xl:text-3xl">2</span>
 					</label>
 				</div>
 
 				<div>
-					<input class="hidden" id="radio_3" type="radio" name="radio" value="3">
+					<input class="hidden" id="radio_3" type="radio" name="pases" value="3">
 					<label
-						class="azul flex justify-center  w-8 h-8 pt-1 sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10 border-2 border-gray-400 cursor-pointer rounded-full "
+						class="azul flex justify-center  w-8 h-8  sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10 border-2 border-gray-400 cursor-pointer rounded-full "
 						style="background-color: #FFE983;"
 						for="radio_3">
-						<span class="font-semibold textcheckbox sm:pt-2  md:pt-1 lg:pt-1 xl:pt-1	 2xl:pt-1">3</span>
+						<span class="font-semibold textcheckbox sm:pt-2  md:pt-1 lg:pt-1 xl:pt-0	 2xl:pt-0 text-xl	 sm:text-xl		  md:text-xl		lg:text-xl		 xl:text-3xl	 2xl:text-3xl">3</span>
 					</label>
 				</div>
 
 				<div>
-					<input class="hidden" id="radio_4" type="radio" name="radio" value="4">
+					<input class="hidden" id="radio_4" type="radio" name="pases" value="4">
 					<label
-						class="azul flex justify-center   w-8 h-8 pt-1 sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10 border-2 border-gray-400 cursor-pointer rounded-full "
+						class="azul flex justify-center   w-8 h-8  sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10 border-2 border-gray-400 cursor-pointer rounded-full "
 						style="background-color: #FFE983;"
 						for="radio_4">
-						<span class=" font-semibold textcheckbox sm:pt-2  md:pt-1 lg:pt-1 xl:pt-1	 2xl:pt-1">4</span>
+						<span class=" font-semibold textcheckbox sm:pt-2  md:pt-1 lg:pt-1 xl:pt-0	 2xl:pt-0 text-xl	 sm:text-xl		  md:text-xl		lg:text-xl		 xl:text-3xl	 2xl:text-3xl">4</span>
 					</label>
 				</div>
 
 				<div>
-					<input class="hidden" id="radio_5" type="radio" name="radio" value="5">
+					<input class="hidden" id="radio_5" type="radio" name="pases" value="5">
 					<label
-						class="azul flex justify-center   w-8 h-8 pt-1 sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10 border-2 border-gray-400 cursor-pointer rounded-full "
+						class="azul flex justify-center   w-8 h-8  sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10 border-2 border-gray-400 cursor-pointer rounded-full "
 						style="background-color: #FFE983;"
 						for="radio_5">
-						<span class=" font-semibold textcheckbox sm:pt-2  md:pt-1 lg:pt-1 xl:pt-1	 2xl:pt-1">5</span>
+						<span class=" font-semibold textcheckbox sm:pt-2  md:pt-1 lg:pt-1 xl:pt-0	 2xl:pt-0 text-xl	 sm:text-xl		  md:text-xl		lg:text-xl		 xl:text-3xl	 2xl:text-3xl">5</span>
 					</label>
 				</div>
 
 				<div>
-					<input class="hidden" id="radio_6" type="radio" name="radio" value="6">
+					<input class="hidden" id="radio_6" type="radio" name="pases" value="6">
 					<label
-						class="azul flex justify-center   w-8 h-8 pt-1 sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10 border-2 border-gray-400 cursor-pointer rounded-full "
+						class="azul flex justify-center   w-8 h-8  sm:w-10 sm:h-10  md:w-10 md:h-10 lg:w-10 lg:h-10 xl:w-10 xl:h-10	 2xl:w-10  2xl:h-10 border-2 border-gray-400 cursor-pointer rounded-full "
 						style="background-color: #FFE983;"
 						for="radio_6">
-						<span class=" font-semibold textcheckbox sm:pt-2  md:pt-1 lg:pt-1 xl:pt-1	 2xl:pt-1">6</span>
+						<span class=" font-semibold textcheckbox sm:pt-2  md:pt-1 lg:pt-1 xl:pt-0	 2xl:-pt-2 text-xl	 sm:text-xl		  md:text-xl		lg:text-xl		 xl:text-3xl	 2xl:text-3xl">6</span>
 					</label>
 				</div>
 			</div>
 			<!--Fin checkbox!-->
+			<input type="hidden" name="huid" value="<?php echo isset($_GET['invitado']) ? $invitado->uid : '' ?>">
+									<input type="hidden" name="nombre" id="Firstname"
+										value="<?php echo isset($_GET['invitado']) ? ($invitado ? $invitado->Nombre : '') : '' ?>" />
 			<div class="flex justify-center pt-10">
 				<div class="relative z-0 w-full mb-5 group">
 					<label for="vegaveg" class="flex justify-center">Eres vegetariano o vegano?</label><br />
 					<select id='vegaveg' name="vegaveg"
-						class="browser-default">
+						class="browser-default w-1/2 m-auto">
 						<option selected value=""></option>
 						<option value="SI">SI</option>
 						<option value="NO">NO</option>
@@ -434,7 +467,7 @@
 				</div>
 			</div>
 			<div class="flex justify-center pt-10">
-				<button type="submit" style="background-color: #FFE983;" class="azul  font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Confirmar asistencia </button>
+				<button type="submit" style="height: 45px;  background-color: #FFE983;" class="azul  font-medium rounded-lg text-sm  w-full sm:w-auto px-5 py-2.5 text-center browser-default ">Confirmar asistencia </button>
 			</div>
 		</form>
 
@@ -452,6 +485,7 @@
 <div class="col s12 m12 l12 spacio3 text-sm md:text-base	md:text-base lg:text-base	 xl:text-base	 2xl:text-base">
 	<img src="<?= $baseUrl ?>src/images/emblemas/EMBLEMA-ELIYDANIEL.png" class="m-auto lg:text-base	 xl:w-2/5		 2xl:w-2/5	" />
 </div>
+
 </main>
 
 <script src="<?= $baseUrl ?>js/jquery-3.5.1.slim.min.js"></script>
@@ -464,13 +498,12 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.3/axios.min.js"></script>
 
 
-<script type="text/javascript" src="<?= $baseUrl ?>src/js/proyecto/carroucel.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="<?= $baseUrl ?>src/js/proyecto/actions.js"></script>
 
 <script>
-	 $(document).ready(function() {
-         $('.slider').bxSlider({
+    $(document).ready(function() {
+        $('.slider').bxSlider({
             controls: false,
             pager:false,
             infiniteLoop:true,
@@ -480,5 +513,74 @@
             pause:5000,
 
          });
-	 })
+
+        let h = $(window).height();
+        let hif = h - 100;
+        let w = $(window).width();
+
+        if (w <= 999) {
+            $('.imagebg').addClass("hidden")
+            $('.imagemb').removeClass("hidden")
+            $('.imagemb').css({
+                'height': h + 'px'
+            })
+
+            $('.imgagradecertop').addClass("hidden")
+            $('.imgagradecerbott').removeClass("hidden")
+
+            $('.contentimgagradece').removeClass("justify-center ")
+            $('.contentimgagradece').removeClass("flex")
+
+             
+        } else if (w >= 1000) {
+            $('.imagebg').removeClass("hidden")
+            $('.imagemb').addClass("hidden")
+            $('.imagebg').css({
+                'height': h + 'px'
+            })
+            $('.imgagradecertop').removeClass("hidden")
+            $('.imgagradecerbott').addClass("hidden")
+
+            $('.contentimgagradece').addClass("justify-center ")
+            $('.contentimgagradece').addClass("flex")
+           
+        }
+
+
+
+        $(window).on('resize', function() {
+            let win = $(this);
+
+            if (win.height() <= 999) {
+                $('.imagebg').addClass("hidden")
+                $('.imagemb').removeClass("hidden")
+                $('.imagemb').css({
+                    'height': h + 'px'
+                })
+
+                $('.imgagradecertop').addClass("hidden")
+                $('.imgagradecerbott').removeClass("hidden")
+                
+                $('.contentimgagradece').removeClass("justify-center ")
+                $('.contentimgagradece').removeClass("flex")
+            }
+            if (win.width() >= 1000) {
+                $('.imagebg').removeClass("hidden")
+                $('.imagemb').addClass("hidden")
+                $('.imagebg').height = win.height()
+
+                $('.imgagradecertop').removeClass("hidden")
+                $('.imgagradecerbott').addClass("hidden")
+                $('.contentimgagradece').addClass("justify-center ")
+                $('.contentimgagradece').addClass("flex")
+
+            }
+
+        });
+    });
+
+   
 </script>
+</body>
+
+</html>
